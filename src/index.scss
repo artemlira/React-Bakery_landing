@@ -1,7 +1,10 @@
-@use 'variables.scss' as v;
-@use 'mixins.scss' as m;
-@use 'functions.scss' as f;
+@use './style/variables.scss' as v;
+@use './style/mixins.scss' as m;
+@use './style/functions.scss' as f;
 @import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
 *,
 *::before,
@@ -10,4 +13,27 @@
   margin: 0;
   border: none;
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: f.rem(16);
+  color: rgba(23, 27, 27, 1);
+}
+
+.container {
+  max-width: f.rem(1200);
+  padding: 0 f.rem(15);
+  margin: 0px auto;
 }
