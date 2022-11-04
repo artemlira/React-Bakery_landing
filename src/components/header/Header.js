@@ -4,7 +4,7 @@ import './header.scss';
 export default function Header() {
   return (
     <header className="header">
-      <div className="container">
+      <div className="header__container container">
         <div className="header__row">
           <div className="header__logo">BKR</div>
           <nav className="header__nav">

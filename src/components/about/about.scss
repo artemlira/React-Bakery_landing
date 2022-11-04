@@ -1,0 +1,44 @@
+@use '../../style/variables.scss' as v;
+@use '../../style/mixins.scss' as m;
+@use '../../style/functions.scss' as f;
+
+
+.about {
+
+
+  // .about__container
+
+  &__container {
+    display: flex;
+    min-height: f.rem(791);
+  }
+
+  // .about__column
+
+  &__column {
+
+    &__left {
+      background-color: rgba(231, 212, 190, 0.44);
+    }
+
+    &__right {
+      background-image: url(../../img/about/Background.svg);
+    }
+  }
+
+  // .about__sience
+
+  &__sience {}
+
+  // .about__title
+
+  &__title {
+    font-family: v.$Ultra;
+    font-size: f.vw(72);
+    line-height: f.vw(80);
+  }
+
+  // .about__text
+
+  &__text {}
+}
